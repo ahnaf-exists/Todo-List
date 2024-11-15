@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="shortcut icon"
+            href="./assets/to-do-list.png"
+            type="image/x-icon"
+        />
+        <link rel="stylesheet" href="style.css" />
+        <title>Todo List</title>
+    </head>
+    <body>
+        <div class="header">Todo List</div>
+        <div class="container">
+            <div class="main">
+                <div class="empty">[Nothing to see here]</div>
+            </div>
+            <div class="aside">
+                <h2>Add a work to Todo List</h2>
+                <input
+                    type="text"
+                    class="aside-title"
+                    placeholder="Title"
+                    maxlength="30"
+                />
+                <textarea
+                    maxlength="300"
+                    class="aside-textarea"
+                    placeholder="Description"
+                ></textarea>
+                <div class="aside-set-time">
+                    <h3>Set a deadline</h3>
+                    <input type="date" class="aside-deadline" />
+                </div>
+
+                <div class="aside-btns">
+                    <button class="add-btn">Add work</button>
+                    <button class="reset-btn">Reset Todo List</button>
+                </div>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
